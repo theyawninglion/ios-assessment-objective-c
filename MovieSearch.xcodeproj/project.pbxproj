@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A5D094D1E7C391B00DC695F /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5D094C1E7C391B00DC695F /* Movie.m */; };
 		9D209EC61E429BE9005D1FED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D209EBA1E429BE9005D1FED /* Assets.xcassets */; };
 		9D209EC71E429BE9005D1FED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D209EBB1E429BE9005D1FED /* LaunchScreen.storyboard */; };
 		9D209EC81E429BE9005D1FED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D209EBD1E429BE9005D1FED /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A5D094B1E7C391B00DC695F /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
+		5A5D094C1E7C391B00DC695F /* Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
 		9D209E9F1E429BCE005D1FED /* MovieSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D209EBA1E429BE9005D1FED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D209EBC1E429BE9005D1FED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -94,6 +97,8 @@
 		9D209ECF1E429C52005D1FED /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5A5D094B1E7C391B00DC695F /* Movie.h */,
+				5A5D094C1E7C391B00DC695F /* Movie.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -108,8 +113,8 @@
 		9D209ED11E429C65005D1FED /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				9D209EBB1E429BE9005D1FED /* LaunchScreen.storyboard */,
 				9D209EBD1E429BE9005D1FED /* Main.storyboard */,
+				9D209EBB1E429BE9005D1FED /* LaunchScreen.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A5D094D1E7C391B00DC695F /* Movie.m in Sources */,
 				9D209ECB1E429BE9005D1FED /* main.m in Sources */,
 				9D209ECA1E429BE9005D1FED /* AppDelegate.m in Sources */,
 			);
