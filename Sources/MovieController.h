@@ -10,6 +10,7 @@
 @class Movie;
 
 @interface MovieController : NSObject
-+ (void)fetchMovieFromSearchTerm:(NSString *)searchTerm completion:(void (^)(NSArray<Movie*>*))completion;
+@property (nonatomic, copy) NSArray<Movie*> *moviesArray;
+- (void)fetchMovieFromSearchTerm:(NSString *)searchTerm completion:(void (^)(NSArray<Movie*>*))completion;
 
 @end

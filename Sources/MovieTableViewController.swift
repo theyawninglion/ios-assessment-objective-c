@@ -13,14 +13,15 @@ class MovieTableViewController: UITableViewController, UISearchBarDelegate {
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         guard let searchTerm = searchBar.text else { return }
-        MovieController.fetchMovie(fromSearchTerm: searchTerm) { (movie) in
+        let movieController = MovieController()
+        movieController.fetchMovie(fromSearchTerm: searchTerm) { (movie) in
             guard let movie = movie else { return }
             DispatchQueue.main.async {
                 self.movies = movie
             }
             self.resignFirstResponder()
-            searchBar.text = ""
         }
+//        searchBar.text = ""
     }
 
     var movies: [Movie] = [] {
