@@ -34,7 +34,13 @@ static NSString * const apiKey = @"66b0f042f063fbc3d55b879b592b32a0";
                                       completion(nil);
                                       return;
                                   }
-                                  NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+                                       NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
+                                  
+                                  NSMutableArray *moviesArray = dictionary[@"results"] ;
+                                 
+                                  NSArray *movies = [[Movie alloc]initWithDictionary:moviesArray];
+//                                  .flatMap({ Movie(dictionary: $0) });
+                                  
                                   if (!dictionary || ![dictionary isKindOfClass:[NSDictionary class]]) {
                                       NSLog(@"Error in fething json: %@", error );
                                       completion(nil);
@@ -42,7 +48,7 @@ static NSString * const apiKey = @"66b0f042f063fbc3d55b879b592b32a0";
                                   }
                                   
                                   Movie *movie = [[Movie alloc]initWithDictionary:dictionary];
-                                  completion(movie);
+                                  completion(movies);
                               }];
     
     
