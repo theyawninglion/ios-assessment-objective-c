@@ -15,7 +15,7 @@
 @property (nonatomic, readonly, copy) NSString *releaseDate;
 @property (nonatomic, readonly) double rating;
 
-- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
+- (instancetype)initWithDictionary:(NSDictionary<NSString*,id> *)dictionary;
 - (instancetype)initWithMovie:(NSString *)movieName overview:(NSString *)overview releaseDate:(NSString *)releaseDate rating:(double)rating;
 
 @end
